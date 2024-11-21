@@ -1,0 +1,557 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    white-space: normal;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(255, 255, 255);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: grid;
+    width: 80vw;
+    justify-self: center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 0.2fr 1.2fr 0.5fr 0.5fr 0.2fr 0.5fr 0.5fr 0.2fr 1fr 0.7fr 1fr;
+    grid-template-areas: 
+    "hero hero hero"
+    "about-us-text about-us-text about-us-text"
+    "about-us about-us about-us"
+    "our-mission our-mission our-mission"
+    "our-story our-story our-story"
+    "gallery-text gallery-text gallery-text"
+    "img-1 img-2 img-3"
+    "img-4 img-5 img-6"
+    "contact-us-text contact-us-text contact-us-text"
+    "team-1 team-2 team-3"
+    "contact-us follow-us visit-us"
+    "form form form"
+}
+
+.container:not(.navigations-wrapper){
+    grid-column-gap: 0.2rem;
+    grid-row-gap: 6rem;
+}
+
+.navigations-wrapper{
+    position: sticky;
+    top: 0;
+} 
+
+.navigation{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color:rgb(255, 255, 255);
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.25);
+}
+
+.logo{
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+div a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 20px;
+    color: black;
+    font-size: 1rem;
+}
+
+.links-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.links-container a:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#sidebar-active{
+    display: none;
+}
+
+.open-sidebar-button{
+    display: none
+}
+
+.closed-sidebar-button{
+    display: none;
+}
+
+.hero{
+    grid-area: hero;
+    background-image: url('hero-bg-abstract.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 3rem;
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+.hero-text h1, .action-button{
+    line-height: 2rem;
+}
+
+.action-button{
+    background-color: black;
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.action-button a{
+    color: white;
+}
+
+.action-button a:hover{
+    color: black;
+    transition: 0.3s ease;
+}
+
+.action-button:hover{
+    background-color: #F4CE14;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.hero-text h1{
+    font-size: 2rem;
+}
+
+.action-button-text{
+    justify-items: center;
+    align-content: center;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.about-us-text{
+    grid-area: about-us-text;
+    text-align: center;
+}
+
+.about-us-page img{
+    margin-top: 2rem;
+    width: 400px;
+    height: 350px;
+}
+
+.about-us-page{
+    grid-area: about-us;
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+} 
+
+.our-mission{
+    grid-area: our-mission;
+    background-image: url(counts-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 0.25rem 0.50rem;
+    place-content: center;
+} 
+
+.our-story{
+    grid-area: our-story;
+    background-image: url(counts-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 0.25rem 0.50rem;
+    place-content: center;
+} 
+
+.gallery-text{
+    grid-area: gallery-text;
+    text-align: center;
+} 
+
+.img-1{
+    grid-area: img-1;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.25);
+
+}
+
+.img-1 img{
+    height: 200px;
+    width: 300px;
+}
+
+.img-2{
+    grid-area: img-2;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.25);
+}
+
+.img-2 img{
+    height: 200px;
+    width: 300px;
+}
+
+.img-3{
+    grid-area: img-3;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.25);
+} 
+
+.img-3 img{
+    height: 200px;
+    width: 300px;
+}
+
+.img-4{
+    grid-area: img-4;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.25);
+} 
+
+.img-4 img{
+    height: 200px;
+    width: 300px;
+}
+
+.img-5{
+    grid-area: img-5;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.25);
+}
+
+.img-5 img{
+    height: 200px;
+    width: 300px;
+}
+
+.img-6{
+    grid-area: img-6;
+    padding: 0.25rem 0.5rem;
+    text-align: center;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.25);
+}
+
+.img-6 img{
+    height: 200px;
+    width: 300px;
+}
+
+.contact-us-text{
+    grid-area: contact-us-text;
+    text-align: center;
+}
+
+.team-box-1{
+    grid-area: team-1;
+    text-align: center;
+} 
+
+.team-box-1 img{
+    width: 300px;
+    height: 300px;
+}
+
+.team-box-2{
+    grid-area: team-2;
+    text-align: center;
+}
+
+.team-box-2 img{
+    width: 300px;
+    height: 300px;
+}
+
+.team-box-3{
+    grid-area: team-3;
+    text-align: center;
+}
+
+.team-box-3 img{
+    width: 300px;
+    height: 300px;
+}
+
+.contact-info{
+    grid-area: contact-us;
+    justify-content: center;
+    padding: 0.25rem 0.5rem;
+}
+
+.visit-us{
+    grid-area: visit-us;
+    padding: 0.25rem 0.5rem;
+} 
+
+.visit-us img{
+    height: 150px;
+    width: 250px;
+}
+
+.follow-us{
+    grid-area: follow-us;
+    padding: 0.25rem 0.5rem;
+} 
+
+.follow-us p a{
+    color: blue;
+}
+ 
+
+.form{
+    grid-area: form;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    place-content: center;
+}
+
+.form h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000000;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  form input:focus, form textarea:focus {
+    border-color: #000000;
+    outline: none;
+  }
+  
+  form button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form button:hover {
+    background-color: #F4CE14;
+    color: black;
+    transition: 0.3s ease;
+  }
+
+.footer{
+    background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+
+
+
+
+    .hero{
+        font-size: 0.75rem;
+    }
+
+    .hero-text h1, .action-button{
+        line-height: 2.5rem;
+    }
+
+    .action-button a{
+        font-size: 0.75rem;
+    }
+    
+    .about-us-page{
+        font-size: 0.75rem;
+    }
+
+    .about-us-page img{
+        margin-top: 1rem;
+        width: 300px;
+        height: 250px;
+    }
+
+    .our-mission, .our-story{
+        font-size: 0.75rem;
+    }
+
+    .gallery-text p{
+        font-size: 0.75rem;
+    }
+
+    .contact-us-text p{
+        font-size: 0.75rem;
+    }
+
+    .team-box-1, .team-box-2, .team-box-3{
+        font-size: 0.75rem;
+    }
+
+    .team-box-1 img{
+        height: 200px;
+        width: 200px;
+
+    }
+    
+    .team-box-2 img{
+        height: 200px;
+        width: 200px;
+
+    }
+    .team-box-3 img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .contact-info, .follow-us, .follow-us p a, .visit-us{
+        font-size: 0.75rem;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+
+    .container{
+        justify-content: center;
+        width: 60vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.2fr 1fr 0.5fr 0.5fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.2fr 0.7fr  0.7fr  0.7fr 0.4fr 0.4fr 0.4fr 0.7fr;
+        grid-template-areas: 
+        "hero "
+        "about-us-text"
+        "about-us"
+        "our-mission"
+        "our-story"
+        "gallery-text"
+        "img-1"
+        "img-2"
+        "img-3"
+        "img-4"
+        "img-5"
+        "img-6"
+        "contact-us-text"
+        "team-1"
+        "team-2"
+        "team-3"
+        "contact-us"
+        "follow-us"
+        "visit-us"
+        "form";
+    }
+
+    .links-container{
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        top: 0;
+
+        right: -100%;
+        z-index: 10;
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: -4px 0 8px rgba(0, 0, 0, 0.30);
+        transition: 0.5s ease-in-out;
+    }
+
+    .links-container a{
+        justify-content: flex-start;
+        height: auto;
+        width: 100%;
+        padding: 20px 30px;
+    }
+
+    .open-sidebar-button, .closed-sidebar-button{
+        display: block;
+        padding: 0 25px;
+    }
+
+    .closed-sidebar-button{
+        padding-top: 20px;
+    }
+
+    #sidebar-active:checked ~ .links-container{
+        right: 0;
+    }
+
+    #sidebar-active:checked ~ #overlay{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+      }
+ }
+
+ @media screen and (max-width: 1200px) {
+
+    .container{
+        width: 60vw;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.2fr 1fr 0.5fr 0.5fr 0.2fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.2fr 0.7fr  0.7fr  0.7fr 0.4fr 0.4fr 0.4fr 0.7fr;
+        grid-template-areas: 
+        "hero "
+        "about-us-text"
+        "about-us"
+        "our-mission"
+        "our-story"
+        "gallery-text"
+        "img-1"
+        "img-2"
+        "img-3"
+        "img-4"
+        "img-5"
+        "img-6"
+        "contact-us-text"
+        "team-1"
+        "team-2"
+        "team-3"
+        "contact-us"
+        "follow-us"
+        "visit-us"
+        "form";
+    }
+    
+ }

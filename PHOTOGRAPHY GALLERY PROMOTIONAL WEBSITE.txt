@@ -1,0 +1,52 @@
+a. Home Page
+Welcome to SnapScape Studio!
+Discover the world through the lens of talented photographers. Our gallery is dedicated to showcasing stunning photography that captures moments, emotions, and the beauty of our surroundings. From breathtaking landscapes to intimate portraits, explore our collections and find inspiration in every frame.
+
+Explore Our Photography – Visit our latest exhibitions and featured photographers to see what’s capturing attention.
+
+
+
+b. About Us Page
+About SnapScape Studio
+SnapScape Studio is a space dedicated to the art of photography. We are passionate about presenting powerful visual stories told through the camera lens, offering a platform for both emerging and established photographers to exhibit their work.
+
+Our Mission
+Our mission is to celebrate the beauty of photography and make it accessible to everyone. We strive to connect photographers with audiences who appreciate the art of capturing moments that inspire, provoke thought, and tell compelling stories.
+
+Our Story
+Since our founding in 2016, SnapScape Studio has grown from a small gallery showcasing local talent to a renowned space featuring a diverse range of photographic styles and themes. We believe in the transformative power of images and aim to foster a deep appreciation for this visual art form.
+
+
+
+c. Gallery Page
+Explore Our Photography Gallery
+Step into a world of visual storytelling. Our gallery features a diverse collection of photography, including stunning landscapes, candid street photography, vivid portraits, and more. Each photo tells a unique story, capturing moments from around the world.
+
+Categories:
+
+Landscapes
+Portraits
+Street Photography
+Abstract
+Documentary
+Click on the images to view full-sized versions and learn more about the photographers behind them.
+
+
+
+d. Contact Us Page
+Contact Us
+We’re excited to connect with fellow photography enthusiasts, artists, and collectors! Whether you have questions about our exhibitions, want to inquire about purchasing a print, or simply wish to know more about our featured photographers, feel free to get in touch.
+
+Contact Information
+
+Email: snapscapestudio@gmail.com
+Phone: 09876543210
+Address: Bonifacio Global City, Taguig City PH
+Follow Us
+Join our community on social media to stay updated with the latest exhibitions, featured photographers, and photography tips: [Instagram, Facebook, Twitter, etc.].
+
+Visit Us
+Drop by our gallery to experience our current exhibitions and engage with our vibrant community of photography lovers!
+
+Contact Form
+[Include fields like Name, Email, Message, and a Submit button]
